@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+    spring-data-generate-database-with-associative-entity:
+        container_name: peaceful_pascal
+        image: postgres:latest
+        ports:
+            - "5432:5432"
+        environment:
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: 12345
+            POSTGRES_DB: pokedex_db
